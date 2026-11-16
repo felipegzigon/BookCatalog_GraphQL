@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Livraria</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form id="bookForm">
+            <input id="title" placeholder="Título" required>
+
+            <input id="year" type="number" placeholder="Ano" required>
+
+            <input id="pages" type="number" placeholder="Páginas" required>
+
+            <select id="authorId" required>
+                <option value="">Selecione um autor</option>
+            </select>
+
+            <button type="submit">Cadastrar livro</button>
+        </form>
+
+        <input id="search" placeholder="Buscar livro...">
+
+        <select id="statusFilter">
+            <option value="">Todos</option>
+            <option value="WANT_TO_READ">Quero ler</option>
+            <option value="READING">Lendo</option>
+            <option value="FINISHED">Lidos</option>
+        </select>
+
+        <div id="bookList"></div>
+    </body>
+</html>

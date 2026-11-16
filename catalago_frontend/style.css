@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 760px;
+    margin: 48px auto;
+    padding: 0 20px;
+    color: #252525;
+    background: #f7f7f5;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e5e5e2;
+    border-radius: 10px;
+}
+
+input,
+select,
+button {
+    min-height: 42px;
+    padding: 10px 12px;
+    border: 1px solid #d8d8d4;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input,
+select {
+    min-width: 0;
+    background: #fff;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #a7b9ac;
+    outline-offset: 1px;
+}
+
+button {
+    color: #fff;
+    background: #365b45;
+    border-color: #365b45;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #294936;
+}
+
+#search {
+    width: 100%;
+    margin: 24px 0 12px;
+}
+
+#statusFilter {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#bookList {
+    display: grid;
+    gap: 12px;
+}
+
+#bookList > * {
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #e5e5e2;
+    border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-top: 24px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+}
